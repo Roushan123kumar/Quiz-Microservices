@@ -1,17 +1,17 @@
-🧠 Microservices-Based Quiz Application
+# 🧠 Microservices-Based Quiz Application
 
 A backend Quiz Application built using Microservices architecture with Spring Boot. The system allows quizzes to be created dynamically from a centralized question bank and supports service discovery, inter-service communication, and scalable deployment.
 
-📌 Project Overview
+# 📌 Project Overview
 
 This project demonstrates how multiple backend services can work together in a loosely coupled and scalable system.
 The application is divided into independent services that communicate using REST APIs and Feign Clients, with Eureka Server handling service discovery.
 
-🏗️ Architecture
+# 🏗️ Architecture
 
 The system consists of the following services:
 
-🔹 Question Service
+#🔹 Question Service
 
 Manages quiz questions and question bank
 
@@ -35,7 +35,7 @@ Return questions based on question IDs
 
 Calculate quiz scores
 
-🔹 Quiz Service
+# 🔹 Quiz Service
 
 Creates quizzes dynamically based on:
 
@@ -55,7 +55,7 @@ Fetch quiz questions
 
 Submit quiz and calculate score
 
-🔹 Eureka Server
+# 🔹 Eureka Server
 
 Acts as a Service Registry
 
@@ -67,7 +67,7 @@ Load balancing between multiple instances
 
 Allows Quiz Service to discover Question Service without hardcoded URLs
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 Java 17
 
@@ -89,7 +89,7 @@ Maven
 
 Postman (API testing)
 
-🗄️ Database Design
+# 🗄️ Database Design
 Quiz Service Database (PostgreSQL)
 
 quiz table
@@ -108,7 +108,7 @@ Stores questions with options, correct answer, category, and difficulty
 
 Correct answers are never exposed to the client
 
-🔄 Application Flow
+# 🔄 Application Flow
 
 Create Quiz
 
@@ -134,7 +134,7 @@ Quiz Service forwards responses to Question Service
 
 Question Service calculates score and returns result
 
-🚀 API Endpoints
+# 🚀 API Endpoints
 Quiz Service
 
 POST /quiz/create
@@ -151,7 +151,7 @@ POST /question/getQuestions
 
 POST /question/getScore
 
-🧪 Testing
+# 🧪 Testing
 
 APIs tested using Postman
 
@@ -159,7 +159,7 @@ Multiple instances of Question Service run on different ports
 
 Load balancing verified via Eureka Server
 
-🎯 Key Learnings
+# 🎯 Key Learnings
 
 Hands-on experience with Microservices architecture
 
@@ -173,7 +173,7 @@ Debugging real-world service-to-service issues
 
 Building secure APIs without exposing sensitive data
 
-📷 Screenshots Included
+# 📷 Screenshots Included
 
 Quiz creation API (Postman)
 
